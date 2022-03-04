@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="form" class="container">
+        <h1>The Dice Game</h1>
+
+        <form name="form" method="GET" action="javascript:play()">
+
+            <div class="dice">
+
+                <input id="nameOfP1" type="text" placeholder="Name of Player 1" required>
+
+            </div>
+
+            <div class="dice">
+
+                <input id="nameOfP2" type="text" placeholder="Name of Player 2" required>
+
+            </div>
+
+            <input class="btn" type="submit" id="strtBtn" value="Play">
+
+        </form>
+    </div>
+
+    <div id="playGround">
+        <h1 id="result"></h1>
+
+        <div class="dice">
+            <p id="setName1"></p>
+            <img id="p1" class="img1" src="">
+        </div>
+        <div class="dice">
+            <p id="setName2"></p>
+            <img id="p2" class="img2" src="">
+        </div>
+        <div>
+            <button class="btn" id="rfsBtn" onclick="play()">Try Again</button>
+            <button class="btn" id="rstBtn" onclick="reset()">Reset </button>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<footer>
+    Developed with ❤️ By <em>Hardik Saini</em>
+</footer>
+
+<script src="script.js"></script>
+
+</html>
